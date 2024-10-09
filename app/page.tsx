@@ -12,7 +12,7 @@ const ProjectShowcase = () => {
     {
       name: "Leejam",
       logo: "/assets/icons/splus.png",  
-      description: "Advanced analytics solution for enterprise businesses",
+      description: "Saudi Arabia-based company that operates a chain of fitness centers called Fitness Time",
     },
     {
       name: "Percepto",
@@ -22,7 +22,7 @@ const ProjectShowcase = () => {
     {
       name: "Baseer",
       logo: "/assets/icons/baseer-logo.png",   
-      description: "Intelligent assistant management platform",
+      description: "Baseer revolutionizes computer vision for organizations.",
     },
     {
       name: "TMS",
@@ -94,10 +94,8 @@ const ProjectShowcase = () => {
                 src={project.logo}
                 alt={`${project.name} logo`}
                 className="w-12 h-12 rounded-full   p-2 border   object-cover transition-transform duration-200 hover:scale-105" />
-
-                  <h3 className="font-semibold text-xl">{project.name}</h3>  
-                      <ExternalLink size={20} />
-                      
+                <h3 className="font-semibold text-xl">{project.name}</h3>
+                <ExternalLink size={20} className="cursor-pointer" /> 
                 </div>
                 <div >
                 
