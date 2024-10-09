@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { Card, CardContent } from "@mui/material";
-import  "/home/abdur-mw/mw/mw-product/app/globals.css"
+import "../app/globals.css";  
 const ProjectShowcase = () => {
   const projects = [
     {
