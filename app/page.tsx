@@ -11,7 +11,7 @@ const ProjectShowcase = () => {
     },
     {
       name: "DAL",
-      logo: "/assets/icons/baseer-fav-icon.png",
+      logo: "/assets/icons/dal.png",
       link: "http://vm2:3000/",
     },
     {
@@ -78,13 +78,12 @@ const ProjectShowcase = () => {
         </p> */}
 
         {/* Dynamic Project Grid */}
-        {/* Dynamic Project Grid */}
 <div className="card-container">
   {projects.map((project, index) => (
     <a href={project.link} key={index} target="_blank">
       <Card className="card-box">
         <CardContent className="p-10">
-          <div className="flex items-center justify-between">
+          <div className="">
             <img
               src={project.logo}
               alt={`${project.name} logo`}

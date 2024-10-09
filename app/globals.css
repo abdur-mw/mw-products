@@ -56,15 +56,21 @@ body {
 
 .card-box {
   border: 3px solid #98CC6D;
-  border-radius: 18px;
+  border-radius: 18px; /* This makes the outer border curve */
   width: 80%;
   height: 15vh;
   margin: 3rem 2rem;
-  background: transparent;
+  background: transparent !important;
   color: white;
   transition: transform 0.3s ease, background-color 0.3s ease;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden; /* Ensures inner content respects the border-radius */
 }
+
+.card-content {
+  border-radius: 18px; /* Ensures the content inside is also curved */
+}
+
 
 .card-box:hover {
   transform: scale(1.05);  
@@ -73,8 +79,9 @@ body {
 
 .project-image {
   width: 100%;
-  height: 100%;
-  object-fit: contain; 
+  height: auto;
+    object-fit: contain !important; 
+    overflow: none;
   transition: transform 0.3s ease;
 }
 
