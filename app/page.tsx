@@ -1,11 +1,12 @@
 "use client";
-import React, { useState } from "react";
-import { Play, ExternalLink } from "lucide-react";
-import { Card, CardContent, CardHeader } from "@mui/material";
+import React from "react";
+import {  ExternalLink } from "lucide-react";
+import { Card, CardContent } from "@mui/material";
 import Masterworks from "@/public/assets/icons/Masterworks";
 
 const ProjectShowcase = () => {
-  const [cardsPerRow, setCardsPerRow] = useState(3);
+
+  const cardsPerRow = 3
 
   const projects = [
     {
