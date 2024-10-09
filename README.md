@@ -1,6 +1,5 @@
 # mw-products
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
-
+It's live : [https://mw-products.vercel.app/]([http://localhost:3000](https://mw-products.vercel.app/)) 
 ## Getting Started
 
 First, run the development server:
