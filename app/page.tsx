@@ -1,6 +1,5 @@
 "use client";
 import React from "react";
-import {  ExternalLink } from "lucide-react";
 import { Card, CardContent } from "@mui/material";
 
 const ProjectShowcase = () => {
