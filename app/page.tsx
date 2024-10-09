@@ -79,7 +79,7 @@ const ProjectShowcase = () => {
           className={`grid grid-cols-1 md:grid-cols-${cardsPerRow} gap-8`}
           style={{ gridTemplateColumns: `repeat(${cardsPerRow}, 1fr)` }}
         >
-          {projects.map((project, index) => (
+          {projects.map((project:any, index) => (
             <Card
               key={index}
               className="bg-white/10 backdrop-blur-sm text-white transition-all duration-300 transform  shadow-md"
@@ -100,7 +100,7 @@ const ProjectShowcase = () => {
                 <div >
                 
                 </div>
-                <p className="text-gray-300">{project.description}</p>
+                <p className="text-gray-800">{project.description}</p>
               </CardContent>
             </Card>
           ))}
