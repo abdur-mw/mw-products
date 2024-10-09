@@ -6,7 +6,7 @@ const ProjectShowcase = () => {
   const projects = [
     {
       name: "Mundabit Platform",
-      logo: "/assets/icons/leejam.png",
+      logo: "http://91.106.107.234:8891/api/uploader/identity/logo",
       link: "http://91.106.107.234:8892/login",
     },
     {
@@ -16,27 +16,27 @@ const ProjectShowcase = () => {
     },
     {
       name: "P+",
-      logo: "/assets/icons/baseer-fav-icon.png",
+      logo: "/assets/icons/pplus1.svg",
       link: "https://pplus-demo.masterteam.sa/",
     },
     {
       name: "S+",
-      logo: "/assets/icons/tms.png",
+      logo: "/assets/icons/splus.svg",
       link: "https://splus-demo.masterteam.sa/",
     },
     {
       name: "Diwan",
-      logo: "/assets/icons/splus.png",
+      logo: "/assets/icons/diwan.svg",
       link: "https://diwan-demo.masterteam.sa/",
     },
     {
       name: "Jadaya",
-      logo: "https://master-works.sa/themes/custom/master_works/logo.png",
+      logo: "",
       link: "#",
     },
     {
       name: "Baseer Suite",
-      logo: "https://master-works.sa/themes/custom/master_works/logo.png",
+      logo: "assets/icons/baseer-logo.png",
       link: "http://183.82.144.156:3000/login",
     },
   ];
@@ -73,35 +73,31 @@ const ProjectShowcase = () => {
         <h1 className="h1">
           Our Products
         </h1>
-        <p className="sub-heading ">
+        {/* <p className="sub-heading ">
           Discover our innovative solutions designed to transform your digital experience.
-        </p>
+        </p> */}
 
         {/* Dynamic Project Grid */}
-        <div className="card-conatianer">
-          {projects.map((project, index) => (
-            <a
-              href={project.link}
-              key={index}
-              target="_blank"
-            >
-              <Card
-                className="card-box"
-              >
-                <CardContent className="p-10">
-                  <div className="flex items-center justify-between">
-                    {/* <img
-                      src={project.logo}
-                      alt={`${project.name} logo`}
-                      className="w-12 h-12 rounded-full p-1 object-cover transition-transform duration-200 hover:scale-105"
-                    /> */}
-                    <h3 className="font-semibold product-name">{project.name}</h3>
-                  </div>
-                </CardContent>
-              </Card>
-            </a>
-          ))}
-        </div>
+        {/* Dynamic Project Grid */}
+<div className="card-container">
+  {projects.map((project, index) => (
+    <a href={project.link} key={index} target="_blank">
+      <Card className="card-box">
+        <CardContent className="p-10">
+          <div className="flex items-center justify-between">
+            <img
+              src={project.logo}
+              alt={`${project.name} logo`}
+              className="project-image"
+            />
+            {/* <h3 className="font-semibold product-name">{project.name}</h3> */}
+          </div>
+        </CardContent>
+      </Card>
+    </a>
+  ))}
+</div>
+
       </main>
     </div>
   );
