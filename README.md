@@ -1,5 +1,5 @@
 # mw-products
-It's live : [https://mw-products.vercel.app/]([http://localhost:3000](https://mw-products.vercel.app/)) 
+It's live : [https://mw-products.vercel.app/](https://mw-products.vercel.app/)
 ## Getting Started
 
 First, run the development server:
