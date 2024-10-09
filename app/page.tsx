@@ -11,22 +11,22 @@ const ProjectShowcase = () => {
   const projects = [
     {
       name: "Leejam",
-      logo: "/assets/icons/splus.png",  
+      logo: "/assets/icons/leejam.png",  
       description: "Saudi Arabia-based company that operates a chain of fitness centers called Fitness Time",
     },
     {
       name: "Percepto",
-      logo: "/assets/icons/splus.png",   
+      logo: "/assets/icons/baseer-fav-icon.png",   
       description: "Seamless IoT integration for modern homes",
     },
     {
       name: "Baseer",
-      logo: "/assets/icons/baseer-logo.png",   
+      logo: "/assets/icons/baseer-fav-icon.png",   
       description: "Baseer revolutionizes computer vision for organizations.",
     },
     {
       name: "TMS",
-      logo: "/assets/icons/splus.png",   
+      logo: "/assets/icons/tms.png",   
       description: "Enterprise-grade cloud security solution",
     },
     {
@@ -93,7 +93,7 @@ const ProjectShowcase = () => {
               <img
                 src={project.logo}
                 alt={`${project.name} logo`}
-                className="w-12 h-12 rounded-full   p-2 border   object-cover transition-transform duration-200 hover:scale-105" />
+                className="w-12 h-12 rounded-full   p-1    object-cover transition-transform duration-200 hover:scale-105" />
                 <h3 className="font-semibold text-xl">{project.name}</h3>
                 <ExternalLink size={20} className="cursor-pointer" /> 
                 </div>
