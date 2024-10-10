@@ -28,7 +28,6 @@ body {
 
 
 .main-content {
-  
   padding: 0vw 5vw;
 }
 
@@ -38,6 +37,7 @@ body {
   text-align: center;
   color: white;
   margin-top: -.1vw;
+  padding-bottom: 20px;
 }
 
 .card-container {
@@ -46,19 +46,16 @@ body {
   max-width: 80vw;
   margin: 0 auto;
   margin-top: 1vw;
-   grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 3vw;
   justify-content: space-between;
 }
 
 
 .card-box {
- 
   border-radius: 18px;
-   
   width: 100%;
   height: 15vh;
-  
   background-color: white;
   transition: transform 0.3s ease, background-color 0.3s ease;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -121,7 +118,7 @@ body {
     width: 100%;
     margin: 1rem 0;
   }
-  
+
   .project-image {
     object-fit: contain !important;
     overflow: none;
