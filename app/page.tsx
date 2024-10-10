@@ -5,6 +5,7 @@ import "../app/globals.css";
 
 
 const ProjectShowcase = () => {
+  //projects data
   const projects = [
     {
       id: 1,
