@@ -1,43 +1,66 @@
 "use client";
 import React from "react";
 import { Card, CardContent } from "@mui/material";
-import "../app/globals.css";  
+import "../app/globals.css";
+
+
 const ProjectShowcase = () => {
   const projects = [
     {
+      id: 1,
       name: "Mundabit Platform",
       logo: "http://91.106.107.234:8891/api/uploader/identity/logo",
       link: "http://91.106.107.234:8892/login",
+      imageWidth: "300px",
+      imageHeight: "100px",
     },
     {
+      id: 2,
       name: "DAL",
       logo: "/assets/icons/dal.png",
       link: "http://vm2:3000/",
+      imageWidth: "300px",
+      imageHeight: "300px",
     },
     {
+      id: 3,
       name: "P+",
       logo: "/assets/icons/pplus1.svg",
       link: "https://pplus-demo.masterteam.sa/",
+      imageWidth: "500px",
+      imageHeight: "300px",
     },
     {
+      id: 4,
       name: "S+",
       logo: "/assets/icons/splus.svg",
       link: "https://splus-demo.masterteam.sa/",
+      imageWidth: "150px",
+      imageHeight: "100px",
     },
     {
+      id: 5,
       name: "Diwan",
       logo: "/assets/icons/diwan.svg",
       link: "https://diwan-demo.masterteam.sa/",
+      imageWidth: "400px",
+      imageHeight: "100px",
     },
     {
+      id: 6,
       name: "Jadaya",
-      logo: "",
+      logo: "/assets/icons/JadayaLogo.png",
       link: "#",
+      imageWidth: "400px",
+      imageHeight: "100px",
     },
     {
+      id: 7,
       name: "Baseer Suite",
       logo: "assets/icons/baseer-logo.png",
       link: "http://183.82.144.156:3000/login",
+      imageWidth: "350px",
+      imageHeight: "100px",
     },
   ];
 
@@ -54,18 +77,16 @@ const ProjectShowcase = () => {
         >
           <source src="/assets/bg.mp4" type="video/mp4" />
           Your browser does not support the video tag.
-        </video>
+        </video>z
       </div>
 
       {/* Mastworks Logo */}
       <nav className="mw-logo">
-        <div>
-          <img
-            src="https://master-works.sa/themes/custom/master_works/logo.png"
-            alt="mw logo"
-            style={{ background: "transparent" }}
-          />
-        </div>
+        <img
+          src="https://master-works.sa/themes/custom/master_works/logo.png"
+          alt="mw logo"
+          style={{ background: "transparent" }}
+        />
       </nav>
 
       {/* Main Content */}
@@ -78,24 +99,38 @@ const ProjectShowcase = () => {
         </p> */}
 
         {/* Dynamic Project Grid */}
-<div className="card-container">
-  {projects.map((project, index) => (
-    <a href={project.link} key={index} target="_blank">
-      <Card className="card-box">
-        <CardContent className="p-10">
-          <div className="">
-            <img
-              src={project.logo}
-              alt={`${project.name} logo`}
-              className="project-image"
-            />
-            {/* <h3 className="font-semibold product-name">{project.name}</h3> */}
-          </div>
-        </CardContent>
-      </Card>
-    </a>
-  ))}
-</div>
+        <div className="card-container" style={{}}>
+          {projects.map((project, index) => (
+            <a href={project.link} key={index} target="_blank">
+              <Card style={{
+              }} className="card-box">
+                <CardContent style={{
+                  width: "100%",
+                  height: "100%",
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  flexDirection: "row",
+                  gap: "1em"
+                }} className="p-10">
+                  <img
+                    src={project.logo}
+                    alt={`${project.name} logo`}
+                    className="project-image"
+                    width={project.imageWidth}
+                    height={project.imageWidth}
+                  />
+                  {/* {
+                    project.name === "Baseer Suite" ?
+                      <h3 style={{
+                      }} className="product-name">{"Suite"}</h3>
+                      : null
+                  } */}
+                </CardContent>
+              </Card>
+            </a>
+          ))}
+        </div>
 
       </main>
     </div>
