@@ -5,7 +5,7 @@ import "../app/globals.css";
 
 
 const ProjectShowcase = () => {
-  //projects data
+  //projects data=
   const projects = [
     {
       id: 1,
@@ -36,7 +36,7 @@ const ProjectShowcase = () => {
       name: "S+",
       logo: "/assets/logos/splus.svg",
       link: "https://splus-demo.masterteam.sa/",
-      imageWidth: "25%",
+      imageWidth: "20%",
       imageHeight: "100px ",
     },
     {
@@ -51,7 +51,7 @@ const ProjectShowcase = () => {
       id: 6,
       name: "Jadaya",
       logo: "/assets/logos/JadayaLogo.png",
-      link: "#",
+      link: "http://95.216.41.252:8083/CorpoWebserver/",
       imageWidth: "80%",
       imageHeight: "100px",
     },
