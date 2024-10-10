@@ -13,42 +13,32 @@
     --foreground: #ededed;
   }
 }
-
 body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
-  margin:5% 0 0 5%;
-
+  margin: 5% 0 0 5%;
 }
 
-
-.mw-logo{
-     width: 15%;
+.mw-logo {
+  width: 15%;
 }
 
-
-.main-content{
-  margin: 0 150px 0 150PX;
+/* Default for larger screens */
+.main-content {
+  margin: 0 150px;
 }
 
-.h1{
-  font-size: 3vw;  
-  font-weight: bold;  
-  text-align: center;  
-  color: white; 
-  margin: 1rem; 
+.h1 {
+  font-size: 3vw;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  margin: 1rem;
   margin-bottom: 5%;
- 
 }
- 
- 
-.card-conatianer{
-     display: grid; 
-    grid-template-columns: repeat(4, 1fr);  
- 
- }
- .card-container {
+
+.card-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 1.5rem;
@@ -56,7 +46,7 @@ body {
 
 .card-box {
   border: 3px solid #98CC6D;
-  border-radius: 18px; /* This makes the outer border curve */
+  border-radius: 18px;
   width: 80%;
   height: 15vh;
   margin: 3rem 2rem;
@@ -64,33 +54,74 @@ body {
   color: white;
   transition: transform 0.3s ease, background-color 0.3s ease;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  overflow: hidden; /* Ensures inner content respects the border-radius */
+  overflow: hidden;
 }
 
 .card-content {
-  border-radius: 18px; /* Ensures the content inside is also curved */
+  border-radius: 18px;
 }
 
-
 .card-box:hover {
-  transform: scale(1.05);  
-  background-color: rgba(255, 255, 255, 0.2); 
+  transform: scale(1.05);
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 .project-image {
   width: 100%;
-  height: auto;
-    object-fit: contain !important; 
-    overflow: none;
+  height: 100%;
+  object-fit: contain;
   transition: transform 0.3s ease;
 }
 
 .project-image:hover {
-  transform: scale(1.1);  
+  transform: scale(1.1);
 }
 
-
-.product-name{
+.product-name {
   font-size: 2vw;
+}
 
+/* Mobile styles */
+@media (max-width: 768px) {
+  .main-content {
+    margin: 0 20px;
+  }
+
+  .card-container {
+    grid-template-columns: repeat(2, 1fr);  
+    gap: 1rem;
+  }
+
+  .card-box {
+    width: 100%;
+    height: auto;
+    margin: 2rem 0;
+  }
+
+  .h1 {
+    font-size: 5vw;  
+  }
+
+  .product-name {
+    font-size: 4vw;  
+  }
+}
+
+@media (max-width: 480px) {
+  .card-container {
+    grid-template-columns: 1fr;  
+  }
+
+  .card-box {
+    width: 100%;
+    margin: 1rem 0;
+  }
+
+  .h1 {
+    font-size: 7vw;  
+  }
+
+  .product-name {
+    font-size: 6vw;  
+  }
 }
