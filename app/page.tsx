@@ -67,7 +67,7 @@ const ProjectShowcase = () => {
 
   return (
     <div>
-      {/* Background Video */}
+      {/*  */}
       <div className="fixed top-0 left-0 w-full h-full -z-10 overflow-hidden">
         <video
           autoPlay
