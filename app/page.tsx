@@ -26,7 +26,7 @@ const ProjectShowcase = () => {
     {
       id: 3,
       name: "P+",
-      logo: "/assets/logos/pplus1.svg",
+      logo: "/assets/logos/pplus.svg",
       link: "https://pplus-demo.masterteam.sa/",
       imageWidth: "80%",
       imageHeight: "300px",
