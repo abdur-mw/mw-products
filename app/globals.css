@@ -65,6 +65,11 @@ body {
   
 }
 
+.card-container > a:nth-child(7) {
+  grid-column: 2;
+  grid-row: 3;
+}
+
 .card-box:hover {
   transform: scale(1.05);
   background-color: rgba(255, 255, 255, 0.8);
