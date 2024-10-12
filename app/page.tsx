@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { Card, CardContent } from "@mui/material";
+import { Card } from "@mui/material";
 import "../app/globals.css";
 
 
@@ -20,7 +20,7 @@ const ProjectShowcase = () => {
       name: "DAL",
       logo: "/assets/logos/dal.png",
       link: "http://vm2:3000/",
-      imageWidth: "70%",
+      imageWidth: "60%",
       imageHeight: "300px",
     },
     {
@@ -36,7 +36,7 @@ const ProjectShowcase = () => {
       name: "S+",
       logo: "/assets/logos/splus.svg",
       link: "https://splus-demo.masterteam.sa/",
-      imageWidth: "20%",
+      imageWidth: "22%",
       imageHeight: "100px ",
     },
     {
@@ -44,7 +44,7 @@ const ProjectShowcase = () => {
       name: "Diwan",
       logo: "/assets/logos/diwan.svg",
       link: "https://diwan-demo.masterteam.sa/",
-      imageWidth: "80%",
+      imageWidth: "70%",
       imageHeight: "100px",
     },
     {
@@ -52,7 +52,7 @@ const ProjectShowcase = () => {
       name: "Jadaya",
       logo: "/assets/logos/JadayaLogo.png",
       link: "http://95.216.41.252:8083/CorpoWebserver/",
-      imageWidth: "80%",
+      imageWidth: "75%",
       imageHeight: "100px",
     },
     {
@@ -67,7 +67,7 @@ const ProjectShowcase = () => {
 
   return (
     <div>
-      {/*  */}
+ 
       <div className="fixed top-0 left-0 w-full h-full -z-10 overflow-hidden">
         <video
           autoPlay
@@ -95,25 +95,14 @@ const ProjectShowcase = () => {
         <h1 className="h1">
           Our Products
         </h1>
-        {/* <p className="sub-heading ">
-          Discover our innovative solutions designed to transform your digital experience.
-        </p> */}
 
         {/* Dynamic Project Grid */}
-        <div className="card-container" style={{}}>
+        <div className="card-container" >
           {projects.map((project, index) => (
             <a href={project.link} key={index} target="_blank">
               <Card style={{
               }} className="card-box">
-                <CardContent style={{
-                  width: "100%",
-                  height: "100%",
-                  display: "flex",
-                  justifyContent: "center",
-                  alignItems: "center",
-                  flexDirection: "row",
-                  gap: "1em"
-                }} className="p-10">
+                
                   <img
                     src={project.logo}
                     alt={`${project.name} logo`}
@@ -121,13 +110,7 @@ const ProjectShowcase = () => {
                     width={project.imageWidth}
                     height={project.imageWidth}
                   />
-                  {/* {
-                    project.name === "Baseer Suite" ?
-                      <h3 style={{
-                      }} className="product-name">{"Suite"}</h3>
-                      : null
-                  } */}
-                </CardContent>
+                         
               </Card>
             </a>
           ))}
