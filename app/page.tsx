@@ -3,7 +3,6 @@ import React from "react";
 import { Card } from "@mui/material";
 import "../app/globals.css";
 
-
 const ProjectShowcase = () => {
   //projects data=
   const projects = [
@@ -50,9 +49,10 @@ const ProjectShowcase = () => {
     {
       id: 6,
       name: "Jadaya",
+      slug: "Business Management Platform",
       logo: "/assets/logos/JadayaLogo.png",
       link: "http://95.216.41.252:8083/CorpoWebserver/",
-      imageWidth: "75%",
+      imageWidth: "40%",
       imageHeight: "100px",
     },
     {
@@ -67,7 +67,6 @@ const ProjectShowcase = () => {
 
   return (
     <div>
- 
       <div className="fixed top-0 left-0 w-full h-full -z-10 overflow-hidden">
         <video
           autoPlay
@@ -78,7 +77,8 @@ const ProjectShowcase = () => {
         >
           <source src="/assets/bg.mp4" type="video/mp4" />
           Your browser does not support the video tag.
-        </video>z
+        </video>
+        z
       </div>
 
       {/* Mastworks Logo */}
@@ -92,30 +92,27 @@ const ProjectShowcase = () => {
 
       {/* Main Content */}
       <main className="main-content">
-        <h1 className="h1">
-          Our Products
-        </h1>
+        <h1 className="h1">Our Products</h1>
 
         {/* Dynamic Project Grid */}
-        <div className="card-container" >
+        <div className="card-container">
           {projects.map((project, index) => (
             <a href={project.link} key={index} target="_blank">
-              <Card style={{
-              }} className="card-box">
-                
-                  <img
-                    src={project.logo}
-                    alt={`${project.name} logo`}
-                    className="project-image"
-                    width={project.imageWidth}
-                    height={project.imageWidth}
-                  />
-                         
+              <Card className="card-box flex  flex-row justify-center items-center p-9">
+                <span className={`slug  ${project.slug && "m1-10"} `}>
+                  {project.slug}{" "}
+                </span>
+                <img
+                  src={project.logo}
+                  alt={`${project.name} logo`}
+                  className={`project-image ${project.slug && "ml-5"}`}
+                  width={project.imageWidth}
+                  height={project.imageWidth}
+                />
               </Card>
             </a>
           ))}
         </div>
-
       </main>
     </div>
   );
