@@ -59,7 +59,7 @@ const ProjectShowcase = () => {
       id: 7,
       name: "Baseer Suite",
       logo: "assets/logos/baseer-logo.png",
-      link: "http://183.82.144.156:3000/login",
+      link: "http://183.82.144.156:9898/login",
       imageWidth: "80%",
       imageHeight: "100px",
     },
